@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+<body>
+	<nav>
+		<div class="nav-left">
+		  <h2>FOODIE</h2>
+		</div>
+		<div class="nav-right">
+		  <ul>
+			<li class="hideOnMobile"><a href="#">Mens</a></li>
+			<li class="hideOnMobile"><a href="#">Womens</a></li>
+			<li class="hideOnMobile"><a href="#">Kids</a></li>
+			<li class="hideOnMobile"><a href="#">Contact Us</a></li>
+			<li class="hideOnMobile"><a href="#">Blog</a></li>
+			<li class="hideOnMobile"><button class="nav-btn"> Login </button></li>
+			<li class="menu-button" onclick=showSidebar()><span class="material-symbols-outlined">menu</span></li>
+		  </ul>
+		  <ul class="sidebar">
+			<li class="text-right" onclick=hideSidebar()><span class="material-symbols-outlined">close</span></li>
+			<li><a href="#">Mens</a></li>
+			<li><a href="#">Womens</a></li>
+			<li><a href="#">Kids</a></li>
+			<li><a href="#">Contact Us</a></li>
+			<li><a href="#">Blog</a></li>
+			<li class="pad-lt-30 pad-rt-30 pad-tp-15"><button class="nav-btn"> Login </button></li>
+		  </ul>
+
+		</div>
+	</nav>
+
+	<script>
+		    function showSidebar() {
+			const sidebar = document.querySelector('.sidebar')
+			sidebar.style.display = 'flex'
+		    }
+
+		    function hideSidebar() {
+			const sidebar = document.querySelector('.sidebar')
+			sidebar.style.display = 'none'
+		    }
+		
+	</script>
+
+</body>
+</html>
